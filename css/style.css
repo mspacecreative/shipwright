@@ -153,6 +153,10 @@ p {
 	.toggle {
 		display: none;
 	}
+	.wrapper {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
 }
 
 @media (max-width: 812px) and (orientation: portrait) {
