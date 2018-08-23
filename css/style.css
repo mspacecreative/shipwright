@@ -69,12 +69,16 @@ p {
 	z-index: 9;
 }
 
-.fa {
+.social-links svg {
 	color: #000;
 	transition: all 0.25s ease-in-out;
 }
 
-.fa:hover {
+.social-links svg {
+	color: #000;
+}
+
+.social-links svg:hover {
 	color: #9cb9c8;
 	transition: all 0.25s ease-in-out;
 }
@@ -127,11 +131,12 @@ p {
 	z-index: 10;
 }
 
-.toggle i {
+.toggle .fa-anchor {
 	transition: all 0.5s ease-in-out;
+	font-size: 20px;
 }
 
-.toggle.open i {
+.toggle.open .fa-anchor {
 	transform: rotate(180deg);
 	transition: all 0.5s ease-in-out;
 }
@@ -170,7 +175,7 @@ p {
 	.contact {
 		display: none;
 	}
-	.social-links .fa {
+	.social-links svg {
 		font-size: 30px;
 	}
 }
