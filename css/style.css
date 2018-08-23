@@ -136,6 +136,7 @@ p {
 	.tagline h1 {
 		font-size: 65px;
 		line-height: 0.9em;
+		letter-spacing: -0.03em;
 	}
 	.wrapper {
 		padding: 25px 50px;
