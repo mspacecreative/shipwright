@@ -167,9 +167,15 @@ p {
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 320px) and (orientation: landscape) {
 	.tagline h1 {
 		font-size: 45px;
+	}
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+	.tagline h1 {
+		font-size: 55px;
 	}
 }
 
