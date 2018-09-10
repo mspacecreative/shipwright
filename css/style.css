@@ -313,12 +313,12 @@ p {
 		padding-top: 5%;
 		padding-bottom: 3%;
 	}
-}
-
-@media (max-width: 812px) and (orientation: landscape) {
 	.logo img {
 		max-width: 200px;
 	}
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
 	.tagline h1 {
 		font-size: 45px;
 	}
