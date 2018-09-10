@@ -316,6 +316,9 @@ p {
 	.logo img {
 		max-width: 200px;
 	}
+	body {
+		background-attachment: scroll;
+	}
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
