@@ -317,7 +317,7 @@ p {
 		max-width: 200px;
 	}
 	body {
-		background-attachment: scroll;
+		background-position: center bottom;
 	}
 }
 
