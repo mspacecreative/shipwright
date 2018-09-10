@@ -297,6 +297,15 @@ p {
 	transition: all 0.5s ease-in-out;
 }
 
+.background-img {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: url(../img/shore-bg.jpg) no-repeat;
+	background-position: bottom;
+	z-index: -1;
+}
+
 @media (max-width: 812px) {
 	.tagline {
 		padding: 35px 0;
