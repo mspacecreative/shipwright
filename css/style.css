@@ -8,21 +8,18 @@
 		max-width: 100%;
 	}
 	
-	#instafeed {
-		width: 100%;
-		margin: 100px auto 0;
+	.insta-container {
 		max-width: 900px;
+		width: 100%;
+		margin: 50px auto 0;
+		padding-top: 50px;
+		background: rgba(255, 255, 255, .75);
+		padding-bottom: 20px;
 	}
 	
-	#instafeed:before {
-		position: absolute;
-		width: 110%;
-		height: 110%;
-		left: 50%;
-		top: 50%;
-		content: '';
-		background: rgba(255, 255, 255, .75);
-		transform: translate(-50%,-50%);
+	#instafeed {
+		width: 90%;
+		margin: auto;
 	}
 	
 	.grid-inner {
@@ -312,12 +309,9 @@ p {
 	.wrapper {
 		padding: 25px 50px;
 	}
-	#instafeed:before {
-		height: 101%;
-		width: 103%;
-	}
-	#instafeed {
-		margin-top: 50px;
+	.insta-container {
+		padding-top: 5%;
+		padding-bottom: 3%;
 	}
 }
 
