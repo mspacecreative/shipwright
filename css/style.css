@@ -1,3 +1,146 @@
+/* MASONRY
+	------------------------------------------*/
+	
+	#instafeed img {
+		width: 100%;
+		height: auto;
+		display: block;
+		max-width: 100%;
+	}
+	
+	#instafeed {
+		width: 100%;
+		margin: auto;
+		max-width: 900px;
+	}
+	
+	.grid-inner {
+		position: relative;
+		transition: all 0.25s ease-in-out;
+		overflow: hidden;
+	}
+	
+	.grid-inner:hover > .fa.fa-search {
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.25s ease-in-out;
+	}
+	
+	.fa.fa-picture-o, .fa.fa-search {
+		position: absolute;
+		transition: all 0.25s ease-in-out;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: #fff;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 99;
+		font-size: 40px;
+		pointer-events: none;
+	}
+	
+	.fa.fa-picture-o {
+		transform: translateY(-50%);
+		left: 32.5%;
+		font-size: 30px;
+	}
+	
+	.fa.fa-external-link {
+		color: #fff;
+		font-size: 33px;
+		transition: all 0.25s ease-in-out;
+	}
+	
+	.fa.fa-external-link:hover {
+		color: #666;
+		transition: all 0.25s ease-in-out;
+	}
+	
+	.link-button a {
+		text-decoration: none;
+	}
+	
+	.link-button.show .fa.fa-picture-o, .link-button.show .fa.fa-external-link {
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.25s ease-in-out;
+	}
+	
+	.grid-inner:before {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		transition: all 0.25s ease-in-out;
+		left: 0;
+		top: 0;
+		content: '';
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	.grid-item:hover > .grid-inner:before {
+		transition: all 0.25s ease-in-out;
+		opacity: .5;
+		visibility: visible;
+	}
+	
+	.grid-item a:first-child {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+	
+	/* ---- grid ---- */
+	
+	.gutter-sizer {
+		width: 3%;
+	}
+	
+	/* clear fix */
+	#instafeed:after {
+	  content: '';
+	  display: table;
+	  clear: both;
+	}
+	
+	/* ---- .grid-item ---- */
+	
+	@media (min-width: 800px) {
+	
+	.grid-sizer,
+	.grid-item {
+	  width: 31.333%;
+	}
+	}
+	
+	@media (max-width: 540px) {
+	.grid-sizer, .grid-item {
+		width: 100%;
+	}
+	.grid-item {
+	 margin-bottom: 5%;
+	}
+	}
+	
+	@media (min-width: 540px) and (max-width: 800px) {
+	.grid-sizer, .grid-item {
+		width: 48.5%;
+	}
+	.grid-item {
+	 margin-bottom: 3%;
+	}
+	}
+	
+	@media (min-width: 541px) {
+	.grid-item {
+	 margin-bottom: 3%;
+	}
+	}
+/* /MASONRY
+	------------------------------------------*/
+
 @font-face {
     font-family: 'justlovely_slanted_wide';
     src: url('../css/fonts/justlovely_slanted_wide-webfont.woff2') format('woff2'),

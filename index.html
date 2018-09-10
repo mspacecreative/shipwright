@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
 </head>
 <body>
 	<div class="toggle">
@@ -38,14 +39,55 @@
 				<li><a href="https://www.instagram.com/shipwright_brewing_company/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 			</ul>
 		</div>
+		<!--INSTAGRAM FEED-->
+		<div id="instafeed">
+			<div class="grid-sizer"></div>
+			<div class="gutter-sizer"></div>
+		</div>
+		<!--/INSTAGRAM FEED-->
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
 	<script>
 		$('.toggle').click(function () {
 			$('.mobile-menu').slideToggle();
 			$(this).toggleClass('open');
 		});
+	</script>
+	<script>
+		
+		var token = '7432327270.1677ed0.7a6b6a9a076f4e36b7a9739850b181d5',
+		    userid = 7432327270,
+		    num_photos = 10;
+		
+		$.ajax({ 
+			url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',
+			dataType: 'jsonp',
+			type: 'GET',
+			data: {access_token: token, count: num_photos},
+			success: function(data){
+			 		console.log(data);
+					for( x in data.data ){
+						$('#instafeed').append('<div class="grid-item"><div class="grid-inner"><a data-fancybox="gallery" href="'+data.data[x].images.standard_resolution.url+'"></a><img src="'+data.data[x].images.low_resolution.url+'"><i class="fab fa-search" disabled="disabled"></i><a href="'+data.data[x].link+'" target="_blank" style="position: absolute; left: 15px; top: 15px;"><i class="fab fa-external-link"></i></a></div></div>'); // data.data[x].images.low_resolution.url - URL of image, 306х306
+						// data.data[x].images.thumbnail.url - URL of image 150х150
+						// data.data[x].images.standard_resolution.url - URL of image 612х612
+						// data.data[x].link - Instagram post URL 
+					}
+					$('#instafeed').masonry('reloadItems');
+					var $container = $('#instafeed');
+					$container.imagesLoaded( function () {
+					  $container.masonry({
+					    columnWidth: '.grid-sizer',
+					    itemSelector: '.grid-item',
+					    gutter: '.gutter-sizer'
+					  });   
+					});
+				}
+		});
+		
 	</script>
 </body>
 </html>
