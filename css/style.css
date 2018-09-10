@@ -302,8 +302,9 @@ p {
 	height: 100%;
 	width: 100%;
 	background: url(../img/shore-bg.jpg) no-repeat;
-	background-position: bottom;
+	background-position: center;
 	z-index: -1;
+	display: none;
 }
 
 @media (max-width: 812px) {
@@ -327,6 +328,9 @@ p {
 	}
 	body {
 		background-position: center bottom;
+	}
+	.background-img {
+		display: block;
 	}
 }
 
