@@ -286,6 +286,10 @@ p {
 	z-index: 10;
 }
 
+.fab {
+	color: #000;
+}
+
 .toggle .fa-anchor {
 	transition: all 0.5s ease-in-out;
 	font-size: 20px;
@@ -337,7 +341,7 @@ p {
 	.contact {
 		display: none;
 	}
-	.social-links svg {
+	.social-links {
 		font-size: 30px;
 	}
 }
