@@ -47,7 +47,7 @@
 		<!--/INSTAGRAM FEED-->
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/6ccd600e51.js"></script>
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
@@ -71,7 +71,7 @@
 			success: function(data){
 			 		console.log(data);
 					for( x in data.data ){
-						$('#instafeed').append('<div class="grid-item"><div class="grid-inner"><a data-fancybox="gallery" href="'+data.data[x].images.standard_resolution.url+'"></a><img src="'+data.data[x].images.low_resolution.url+'"><i class="fab fa-search" disabled="disabled"></i><a href="'+data.data[x].link+'" target="_blank" style="position: absolute; left: 15px; top: 15px;"><i class="fab fa-external-link"></i></a></div></div>'); // data.data[x].images.low_resolution.url - URL of image, 306х306
+						$('#instafeed').append('<div class="grid-item"><div class="grid-inner"><a data-fancybox="gallery" href="'+data.data[x].images.standard_resolution.url+'"></a><img src="'+data.data[x].images.low_resolution.url+'"><i class="fa fa-search" disabled="disabled"></i><a href="'+data.data[x].link+'" target="_blank" style="position: absolute; left: 15px; top: 15px;"><i class="fa fa-external-link"></i></a></div></div>'); // data.data[x].images.low_resolution.url - URL of image, 306х306
 						// data.data[x].images.thumbnail.url - URL of image 150х150
 						// data.data[x].images.standard_resolution.url - URL of image 612х612
 						// data.data[x].link - Instagram post URL 

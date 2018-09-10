@@ -10,8 +10,19 @@
 	
 	#instafeed {
 		width: 100%;
-		margin: auto;
+		margin: 100px auto 0;
 		max-width: 900px;
+	}
+	
+	#instafeed:before {
+		position: absolute;
+		width: 110%;
+		height: 110%;
+		left: 50%;
+		top: 50%;
+		content: '';
+		background: rgba(255, 255, 255, .75);
+		transform: translate(-50%,-50%);
 	}
 	
 	.grid-inner {
@@ -152,6 +163,7 @@
 
 * {
 	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
 }
 
 body {
@@ -295,6 +307,13 @@ p {
 	}
 	.wrapper {
 		padding: 25px 50px;
+	}
+	#instafeed:before {
+		height: 101%;
+		width: 103%;
+	}
+	#instafeed {
+		margin-top: 50px;
 	}
 }
 
