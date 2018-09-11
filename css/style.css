@@ -321,7 +321,7 @@ p {
 	}
 	.insta-container {
 		padding-top: 5%;
-		padding-bottom: 3%;
+		padding-bottom: 0;
 	}
 	.logo img {
 		max-width: 200px;
