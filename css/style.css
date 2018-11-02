@@ -165,8 +165,20 @@
 
 body {
 	margin: 0;
-	background: url(../img/shore-bg.jpg) no-repeat center center fixed;
+	background: url(../img/shore-bg-2.jpg) no-repeat center center fixed;
 	background-size: cover;
+}
+
+.launching-soon {
+	position: fixed;
+	right: -23px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url('../img/launching-soon.png') no-repeat center right;
+	background-size: contain;
+	width: 15%;
+	height: 100%;
+	z-index: 2;
 }
 
 .wrapper {
@@ -185,7 +197,9 @@ body {
 
 .tagline {
 	text-align: center;
-	padding: 80px 0;
+	padding: 40px 0 ;
+	max-width: 600px;
+	margin: auto;
 }
 
 .tagline h1 {
@@ -368,6 +382,16 @@ p {
 	}
 }
 
+@media (max-width: 980px) {
+	.launching-soon {
+		background: url('../img/launching-soon-mobile.png') no-repeat center bottom -25px;
+		width: 100%;
+		height: 100%;
+		right: auto;
+		background-size: 100%;
+	}
+}
+
 @media (min-width: 768px) {
 	.toggle {
 		display: none;
@@ -399,5 +423,8 @@ p {
 @media (max-width: 1024px) {
 	.tagline h1 {
 		letter-spacing: -0.03em;
+	}
+	.tagline {
+		max-width: 400px;
 	}
 }
