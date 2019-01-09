@@ -171,11 +171,12 @@ body {
 
 .launching-soon {
 	position: fixed;
-	right: -23px;
-	top: 0;
+	right: -30px;
+	top: 50%;
 	width: auto;
-	height: 100vh;
+	height: 80%;
 	z-index: 2;
+	transform: translateY(-50%);
 }
 
 .launching-soon img {
@@ -405,7 +406,7 @@ p {
 		max-width: 400px;
 	}
 	.launching-soon {
-		width: 90vw;
+		width: 60vw;
 		height: auto;
 		right: auto;
 		bottom: -45px;
@@ -425,7 +426,7 @@ p {
 
 @media (max-width: 450px) {
 	.launching-soon {
-		bottom: -12px;
+		bottom: -14px;
 	}
 }
 
@@ -441,14 +442,14 @@ p {
 		padding-left: 25px;
 	}
 	.launching-soon {
-		bottom: -18px;
-		width: 70vw;
+		bottom: -20px;
+		width: 40vw;
 	}
 }
 
 @media (min-width: 1024px) and (orientation: portrait) {
 	.launching-soon {
-		bottom: -27px;
+		bottom: -35px;
 	}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
@@ -457,6 +458,6 @@ p {
 	}
 	
 	.launching-soon {
-		bottom: -21px;
+		bottom: -26px;
 	}
 }
