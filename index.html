@@ -11,6 +11,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
 </head>
 <body>
+	<div class="promo-overlay">
+		<div class="promo-overlay-inner">
+			<i class="fa fa-close close-promo"></i>
+			<a href="https://grandbanker.com/wp-content/uploads/2020/03/Take-Out_Only_Menu.pdf" target="_blank"><img src="img/shipwright-brewing-update.jpg"></a>
+		</div>
+	</div>
 	<div class="background-img"></div>
 	<div class="launching-soon">
 		<img src="img/now-open-graphic.png" class="launching-soon-desktop" />
@@ -63,6 +69,9 @@
 		$('.toggle').click(function () {
 			$('.mobile-menu').slideToggle();
 			$(this).toggleClass('open');
+		});
+		$('.promo-overlay, .close-promo').click(function() {
+			$('.promo-overlay').fadeOut();
 		});
 	</script>
 	<script>
