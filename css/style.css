@@ -1,3 +1,33 @@
+.promo-overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .85);
+	z-index: 999;
+}
+.promo-overlay-inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 800px;
+	width: 80%;
+}
+.promo-overlay img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+.fa-close.close-promo {
+	position: absolute;
+	font-size: 20px;
+	color: #fff;
+	top: -20px;
+	right: -20px;
+}
+
 /* MASONRY
 	------------------------------------------*/
 	
