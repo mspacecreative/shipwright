@@ -1,5 +1,6 @@
 <div class="promo-overlay">
-	<div class="promo-overlay-inner"><i class="fa fa-close close-promo"></i>
+	<div class="promo-overlay-inner">
+		<img class="close-promo" src="<?php echo get_template_directory_uri(); ?>/assets/img/close-white.png">
 		
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/shipwright-brewery-hours.jpg">
 	</div>

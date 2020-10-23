@@ -1140,12 +1140,12 @@ table {
 	height: auto;
 }
 
-.fa-close.close-promo {
+.promo-overlay .close-promo {
+	width: 15px;
+	height: 15px;
+	right: 0;
 	position: absolute;
-	font-size: 20px;
-	color: #fff;
-	top: -20px;
-	right: -20px;
+	top: -30px;
 	cursor: pointer;
 }
 
@@ -1346,6 +1346,9 @@ footer .inner {
 	width: 100%;
 	padding: 0 5%;
 	position: relative;
+	left: auto;
+	top: auto;
+	transform: none;
 }
 
 footer {
