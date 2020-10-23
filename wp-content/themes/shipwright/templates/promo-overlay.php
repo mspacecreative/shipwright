@@ -6,8 +6,6 @@
 	</div>
 </div>
 
-<div class="background-img"></div>
-
 <div class="launching-soon">
 	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/now-open-graphic.png" class="launching-soon-desktop" />
 	

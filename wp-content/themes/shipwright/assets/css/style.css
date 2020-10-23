@@ -1161,7 +1161,6 @@ font-style: normal;
 	box-sizing: border-box;
 }
 
-/*
 .background-img {
 	position: fixed;
 	height: 100%;
@@ -1171,7 +1170,6 @@ font-style: normal;
 	z-index: -1;
 	display: none;
 }
-*/
 
 body {
 	background: url(../img/shore-bg-2.jpg) no-repeat center center fixed;

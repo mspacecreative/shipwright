@@ -29,6 +29,10 @@
 		<!-- MOBILE NAV -->
 		<?php get_template_part('templates/mobile-nav'); ?>
 		<!-- / MOBILE NAV -->
+		
+		<!-- BACKGROUND IMAGE ON MOBILE -->
+		<div class="background-img"></div>
+		<!-- / BACKGROUND IMAGE ON MOBILE -->
 
 		<!-- wrapper -->
 		<div class="wrapper">
